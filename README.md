@@ -10,7 +10,7 @@ The bicycle kinematics are governed by the following set of equations:
 
 '''math
   \begin{align*}
-  \dot{x}_c &= v \cos{(\theta + \beta)} \\
+  $\dot{x}_c &= v \cos{(\theta + \beta)}$ \\
   \dot{y}_c &= v \sin{(\theta + \beta)} \\
   \dot{\theta} &= \frac{v \cos{\beta} \tan{\delta}}{L} \\
   \dot{\delta} &= \omega \\
