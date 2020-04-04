@@ -9,8 +9,8 @@ In this notebook, I implemented the kinematic bicycle model. The model accepts v
 The bicycle kinematics are governed by the following set of equations:
 
   \begin{align*}
-  <img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
-  \dot{x}_c &= v \cos{(\theta + \beta)} \\
+  <img src="https://render.githubusercontent.com/render/math?math=\dot{x}_c &= v \cos{(\theta + \beta)} \\">
+  
   \dot{y}_c &= v \sin{(\theta + \beta)} \\
   \dot{\theta} &= \frac{v \cos{\beta} \tan{\delta}}{L} \\
   \dot{\delta} &= \omega \\
