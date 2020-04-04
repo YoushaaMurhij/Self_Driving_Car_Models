@@ -7,6 +7,7 @@ This repositoey inlcuded various of simple models used in autonomous vehicles.
 In this notebook, I implemented the kinematic bicycle model. The model accepts velocity and steering rate inputs and steps through the bicycle kinematic equations. We can provide a set of inputs to drive the bicycle in a certain trajectory.
 
 The bicycle kinematics are governed by the following set of equations:
+
 '''math
   \begin{align*}
   \dot{x}_c &= v \cos{(\theta + \beta)} \\
