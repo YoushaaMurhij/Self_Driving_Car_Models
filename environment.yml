@@ -1,8 +1,0 @@
-name: travis_anaconda_jupyter
-channels:
-- defaults
-dependencies:
-- python
-- numpy
-- jupyter
-- pytest==3.1.3
