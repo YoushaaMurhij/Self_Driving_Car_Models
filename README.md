@@ -13,4 +13,7 @@ In this notebook, I implemented the forward longitudinal vehicle model. The mode
 The input to the model is a throttle percentage in range [0,1] which provides torque to the engine and subsequently accelerates the vehicle for forward motion.
 
 ## Controller2d
-In this .ph file, I implemented full logitudinal and lateral control of a simulated car in Carla software.
+In this .py file, I implemented full logitudinal and lateral control of a simulated car in Carla software.
+
+## Extended Kalman Filter EKF
+
