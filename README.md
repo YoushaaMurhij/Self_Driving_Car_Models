@@ -11,3 +11,6 @@ The bicycle begins with zero initial conditions, has a maximum turning rate of 1
 In this notebook, I implemented the forward longitudinal vehicle model. The model accepts throttle inputs and steps through the longitudinal dynamic equations. We can give a set of inputs that drives over a small road slope to test your model.
 
 The input to the model is a throttle percentage in range [0,1] which provides torque to the engine and subsequently accelerates the vehicle for forward motion.
+
+## Controller2d
+In this .ph file, I implemented full logitudinal and lateral control of a simulated car in Carla software.
