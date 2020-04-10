@@ -166,12 +166,32 @@ for k in range(1, imu_f.data.shape[0]):  # start at 1 b/c we have initial predic
     delta_t = imu_f.t[k] - imu_f.t[k - 1]
 
     # 1. Update state with IMU inputs
+    rotation_matrix = Quaternion(*q_est[k-1]).to_mat()
 
     # 1.1 Linearize the motion model and compute Jacobians
-
+    p_est[k] = p_est[k-1] + delta_t * v_est[k-1] + (delta_t**2/2) * (rotation_matrix.dot(imu_f.data[k-1]) + g)
+    v_est[k] = v_est[k-1] + delta_t*(rotation_matrix.dot(imu_f.data[k-1]) + g)
+    q_est[k] = Quaternion(axis_angle=imu_w.data[k-1] * delta_t).quat_mult_right(q_est[k-1])
+    
     # 2. Propagate uncertainty
+    F = np.identity(9)
+    Q = np.identity(6)
+    F[:3, 3:6] = delta_t * np.identity(3)
 
+    F[3:6, 6:] = -(rotation_matrix.dot(skew_symmetric(imu_f.data[k-1].reshape((3,1)))))
+
+
+    Q[:, :3] *= delta_t**2 * var_imu_f
+    Q[:,-3:] *= delta_t**2 * var_imu_w
+    p_cov[k] = F.dot(p_cov[k-1]).dot(F.T) + l_jac.dot(Q).dot(l_jac.T)
+    
     # 3. Check availability of GNSS and LIDAR measurements
+    if lidar_i < lidar.t.shape[0] and lidar.t[lidar_i] == imu_f.t[k-1]:
+        p_est[k], v_est[k], q_est[k], p_cov[k] = measurement_update(var_lidar, p_cov[k], lidar.data[lidar_i].T, p_est[k], v_est[k], q_est[k])
+        lidar_i +=1
+    if gnss_i < gnss.t.shape[0] and gnss.t[gnss_i] == imu_f.t[k-1]:
+        p_est[k], v_est[k], q_est[k], p_cov[k] = measurement_update(var_gnss, p_cov[k], gnss.data[gnss_i].T, p_est[k], v_est[k], q_est[k])
+        gnss_i +=1
 
     # Update states (save)
 
