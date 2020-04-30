@@ -15,8 +15,12 @@ The input to the model is a throttle percentage in range [0,1] which provides to
 ## Controller2d
 In this .py file, I implemented full logitudinal and lateral control of a simulated car in Carla software.
 
+# State Estimation and Localization for Self-Driving Cars
+
 ## Extended Kalman Filter EKF
 I implemented an Extended Kalman filter, which estimates the trajectory of a vehicle using odometry, range and bearing measurements.
 
 ## Error state EKF
 Implementation of ES-EKF to predict the vehicle position depending on Data from IMU, Lidar and GNSS sensors.
+
+# Visual Perception for Self-Driving Cars
