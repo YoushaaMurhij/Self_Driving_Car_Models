@@ -25,4 +25,5 @@ Implementation of ES-EKF to predict the vehicle position depending on Data from 
 
 # Visual Perception for Self-Driving Cars 
 
+## Applying Stereo Depth to a Driving Scenario:
 This notebook contains an inplementation to locate a car in a scene and estimate how far you are from it using a stereo camera model. This exercise gives a brief introduction to using Python to implement how to find the distance to collision with an obstacle.
