@@ -1,6 +1,6 @@
 # Self Driving Car Models
 
-This repositoey inlcuded various of applied models used in nowadays autonomous vehicles.
+This repositoey included various of applied models used in nowadays autonomous vehicles.
 
 ## kinematic bicycle model notebook
 In this notebook, I implemented the kinematic bicycle model. The model accepts velocity and steering rate inputs and steps through the bicycle kinematic equations. We can provide a set of inputs to drive the bicycle in a certain trajectory.
