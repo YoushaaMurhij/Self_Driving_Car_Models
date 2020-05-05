@@ -30,3 +30,11 @@ This notebook contains an inplementation to locate a car in a scene and estimate
 
 ## Visual Odometry for Localization in Autonomous Driving
 In this notebook, you will practice using Visual Features - Detection, Description and Matching to estimate an autonomous vehicle trajectory by images taken with a monocular camera set up on the vehicle.
+
+## Environment Perception for Self-Driving Cars
+In this notebook, you can find:
+
+* How to use the output of semantic segmentation neural networks to implement drivable space estimation in 3D.
+* How to use the output of semantic segmentation neural networks to implement lane estimation.
+* How to use the output of semantic segmentation to filter errors in the output of 2D object detectors.
+* How to use the filtered 2D object detection results to determine how far obstacles are from the self-driving car.
