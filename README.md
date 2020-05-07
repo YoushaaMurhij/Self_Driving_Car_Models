@@ -40,3 +40,11 @@ In this notebook, you can find:
 * How to use the output of semantic segmentation neural networks to implement lane estimation.
 * How to use the output of semantic segmentation to filter errors in the output of 2D object detectors.
 * How to use the filtered 2D object detection results to determine how far obstacles are from the self-driving car.
+
+## Occupancy Grid
+In this notebook, you can find:
+
+* Implementation of gathering range measurements of a moving car's surroundings using a lidar scanning function.
+* Extracting occupancy information from the range measurements using an inverse scanner model.
+* Performing logodds updates on an occupancy grids based on incoming measurements.
+* Iteratively constructing a probabilistic occupancy grid from those log odds updates.
