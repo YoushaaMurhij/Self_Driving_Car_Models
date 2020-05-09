@@ -41,6 +41,8 @@ In this notebook, you can find:
 * How to use the output of semantic segmentation to filter errors in the output of 2D object detectors.
 * How to use the filtered 2D object detection results to determine how far obstacles are from the self-driving car.
 
+# Motion Planning for Self-Driving Cars 
+
 ## Occupancy Grid
 In this notebook, you can find:
 
