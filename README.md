@@ -2,7 +2,7 @@
 
 This repository included various of applied models used in nowadays autonomous vehicles.
 
-## Introduction to Self-Driving Cars
+## 1- Introduction to Self-Driving Cars
 
 ### kinematic bicycle model notebook
 In this notebook, I implemented the kinematic bicycle model. The model accepts velocity and steering rate inputs and steps through the bicycle kinematic equations. We can provide a set of inputs to drive the bicycle in a certain trajectory.
@@ -17,7 +17,7 @@ The input to the model is a throttle percentage in range [0,1] which provides to
 ### Controller2d
 In this .py file, I implemented full logitudinal and lateral control of a simulated car in Carla software.
 
-## State Estimation and Localization for Self-Driving Cars
+## 2- State Estimation and Localization for Self-Driving Cars
 
 ### Extended Kalman Filter EKF
 I implemented an Extended Kalman filter, which estimates the trajectory of a vehicle using odometry, range and bearing measurements.
@@ -25,7 +25,7 @@ I implemented an Extended Kalman filter, which estimates the trajectory of a veh
 ## Error state EKF
 Implementation of ES-EKF to predict the vehicle position depending on Data from IMU, Lidar and GNSS sensors.
 
-## Visual Perception for Self-Driving Cars 
+## 3- Visual Perception for Self-Driving Cars 
 
 ### Applying Stereo Depth to a Driving Scenario:
 This notebook contains an inplementation to locate a car in a scene and estimate how far you are from it using a stereo camera model. This exercise gives a brief introduction to using Python to implement how to find the distance to collision with an obstacle.
@@ -41,7 +41,7 @@ In this notebook, you can find:
 * How to use the output of semantic segmentation to filter errors in the output of 2D object detectors.
 * How to use the filtered 2D object detection results to determine how far obstacles are from the self-driving car.
 
-## Motion Planning for Self-Driving Cars 
+## 4- Motion Planning for Self-Driving Cars 
 
 ### Occupancy Grid
 In this notebook, you can find:
