@@ -94,9 +94,7 @@ class Controller2D(object):
         brake_output    = 0
 
         ######################################################
-        ######################################################
-        # MODULE 7: DECLARE USAGE VARIABLES HERE
-        ######################################################
+        #DECLARE USAGE VARIABLES HERE
         ######################################################
         """
             Use 'self.vars.create_var(<variable name>, <default value>)'
@@ -154,9 +152,7 @@ class Controller2D(object):
             """
 
             ######################################################
-            ######################################################
-            # MODULE 7: IMPLEMENTATION OF LONGITUDINAL CONTROLLER HERE
-            ######################################################
+            #IMPLEMENTATION OF LONGITUDINAL CONTROLLER HERE
             ######################################################
             """
                 Implement a longitudinal controller here. Remember that you can
@@ -199,9 +195,7 @@ class Controller2D(object):
 
 
             ######################################################
-            ######################################################
-            # MODULE 7: IMPLEMENTATION OF LATERAL CONTROLLER HERE
-            ######################################################
+            # IMPLEMENTATION OF LATERAL CONTROLLER HERE
             ######################################################
             """
                 Implement a lateral controller here. Remember that you can
@@ -265,9 +259,7 @@ class Controller2D(object):
             self.set_brake(brake_output)        # in percent (0 to 1)
 
         ######################################################
-        ######################################################
-        # MODULE 7: STORE OLD VALUES HERE (ADD MORE IF NECESSARY)
-        ######################################################
+        # STORE OLD VALUES HERE (ADD MORE IF NECESSARY)
         ######################################################
         """
             Use this block to store old values (for example, we can store the
